@@ -1,4 +1,16 @@
-import { Box, Container, Grid, GridItem, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  GridItem,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import { stack } from "../../constants/constants";
 import Card from "../Card/Card";
@@ -17,7 +29,31 @@ export default function StackDesktop(props) {
             From Back-End to Design
           </Text>
           <Box marginY="48px">
-            {stack?.map((item, idx) => (
+            <Tabs variant="soft-rounded" colorScheme="pink" isFitted>
+              <TabList height="48px" marginY="24px">
+                {stack?.map((item, idx) => (
+                  <Tab key={idx}> {item?.name} </Tab>
+                ))}
+              </TabList>
+              <TabPanels>
+                {stack?.map((item, idx) => (
+                  <Grid templateColumns="repeat(5, 1fr)" gap={6} key={idx}>
+                    {item?.technologies?.map((tech, idx) => (
+                      <TabPanel key={idx}>
+                        <GridItem>
+                          <Card
+                            names={tech?.name}
+                            backgroundColor={tech?.color}
+                            image={tech?.images}
+                          />
+                        </GridItem>
+                      </TabPanel>
+                    ))}
+                  </Grid>
+                ))}
+              </TabPanels>
+            </Tabs>
+            {/* {stack?.map((item, idx) => (
               <Box key={idx} marginY="48px">
                 <Text fontSize="32px" fontWeight="bold">
                   {item?.name}
@@ -35,7 +71,7 @@ export default function StackDesktop(props) {
                   ))}
                 </Grid>
               </Box>
-            ))}
+            ))} */}
           </Box>
         </Box>
       </Container>
