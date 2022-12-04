@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
 import Stack from "../components/Stack/Stack";
 import useResponsive from "../hooks/useResponsive";
 import styles from "../styles/Home.module.css";
@@ -21,6 +22,7 @@ export default function Home(props) {
       <Header {...props} />
       <Hero {...props} />
       <Stack {...props} />
+      <Projects {...props} />
     </>
   );
 }

@@ -6,8 +6,8 @@ export default function Stack(props) {
   const { isMobile } = props;
 
   if (isMobile) {
-    return <StackMobile />;
+    return <StackMobile {...props} />;
   } else {
-    return <StackDesktop />;
+    return <StackDesktop {...props} />;
   }
 }

@@ -1,15 +1,7 @@
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Grid,
-  GridItem,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
+import { HiArrowRight } from "react-icons/hi";
 
 export default function HeroDesktop() {
   return (
@@ -21,21 +13,18 @@ export default function HeroDesktop() {
     >
       <Container maxW="container.xl">
         <Flex alignItems="center" justifyContent="center" minHeight="80vh">
-          <Box>
-            <Text
-              textAlign="center"
-              color="whitesmoke"
-              fontWeight="bold"
-              fontSize="18px"
-            >
+          <Flex flexDirection="column" gap={6}>
+            <Flex justifyContent="center">
               <ReactTypingEffect
                 text={["FRONT-END WEB DEVELOPER", "LARAVEL DEVELOPER", "SQL"]}
                 speed={100}
                 typingDelay={250}
                 eraseDelay={200}
                 eraseSpeed={100}
+                className="typingText"
               />
-            </Text>
+            </Flex>
+
             <Text
               textAlign="center"
               color="whitesmoke"
@@ -45,11 +34,26 @@ export default function HeroDesktop() {
               Best phase to keep the journey living is learning 💥 <br />
             </Text>
             <Text textAlign="center" color="whitesmoke" fontSize="16px">
-              Hello there! Im Ashari Novaldi. In this personal portfolio
+              Hello there! Im Ashari Novaldi. <br /> In this personal portfolio
               website, im gonna show you about me and several projects Ive
               worked on before.
             </Text>
-          </Box>
+            <Button
+              backgroundColor="#FB2576"
+              rightIcon={<HiArrowRight />}
+              color="whitesmoke"
+              padding="16px"
+              margin="0 auto"
+              fontWeight="normal"
+              transition="0.5s ease-in-out"
+              _hover={{
+                transform: "translate(-10px, -5px)",
+                backgroundColor: "#e10559",
+              }}
+            >
+              Explore My Projects
+            </Button>
+          </Flex>
         </Flex>
       </Container>
     </Box>
