@@ -1,6 +1,7 @@
 import React from "react";
 import StackDesktop from "./StackDesktop";
 import StackMobile from "./StackMobile";
+import PropTypes from "prop-types";
 
 export default function Stack(props) {
   const { isMobile } = props;
@@ -11,3 +12,7 @@ export default function Stack(props) {
     return <StackDesktop {...props} />;
   }
 }
+
+Stack.propTypes = {
+  isMobile: PropTypes.bool,
+};

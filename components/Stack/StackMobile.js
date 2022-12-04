@@ -3,6 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import { stack } from "../../constants/constants";
 import Card from "../Card/Card";
+import Divider from "../Divider/Divider";
 
 export default function StackMobile(props) {
   const { isMobile } = props;
@@ -16,6 +17,7 @@ export default function StackMobile(props) {
   return (
     <>
       <Container maxW="container.xl" marginY="24px">
+        <Divider />
         <Box marginY="24px">
           <Text fontSize="24px" fontWeight="bold">
             Stack and Tools

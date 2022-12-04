@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectDesktop from "./ProjectDesktop";
 import ProjectMobile from "./ProjectMobile";
+import PropTypes from "prop-types";
 
 export default function Project(props) {
   const { isMobile } = props;
@@ -10,3 +11,7 @@ export default function Project(props) {
     return <ProjectDesktop {...props} />;
   }
 }
+
+Project.propTypes = {
+  isMobile: PropTypes.bool,
+};

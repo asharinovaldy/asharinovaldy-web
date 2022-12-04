@@ -1,6 +1,7 @@
 import React from "react";
 import HeroDesktop from "./HeroDesktop";
 import HeroMobile from "./HeroMobile";
+import PropTypes from "prop-types";
 
 export default function Hero(props) {
   const { isMobile } = props;
@@ -11,3 +12,7 @@ export default function Hero(props) {
     return <HeroDesktop {...props} />;
   }
 }
+
+Hero.propTypes = {
+  isMobile: PropTypes.bool,
+};

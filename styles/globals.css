@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -20,6 +21,10 @@ a {
   color: whitesmoke;
   font-weight: bold;
   font-size: 18px;
+}
+
+.slick-list {
+  padding-bottom: 24px !important;
 }
 
 @media (prefers-color-scheme: dark) {

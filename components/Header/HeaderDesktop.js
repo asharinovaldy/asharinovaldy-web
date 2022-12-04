@@ -18,7 +18,7 @@ export default function HeaderDesktop() {
               </Text>
             </Flex>
             <Flex alignItems="center" gap={12}>
-              <Link href="#">Stack</Link>
+              <Link href="#stack">Stack</Link>
               <Link href="#">Project</Link>
               <Link href="#">About</Link>
             </Flex>

@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
+import About from "../components/About/About";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
@@ -23,6 +24,7 @@ export default function Home(props) {
       <Hero {...props} />
       <Stack {...props} />
       <Projects {...props} />
+      <About {...props} />
     </>
   );
 }

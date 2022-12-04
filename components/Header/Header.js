@@ -1,8 +1,7 @@
-import { Text } from "@chakra-ui/react";
 import React from "react";
-import { useMediaQuery } from "react-responsive";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
+import PropTypes from "prop-types";
 
 export default function Header(props) {
   const { isMobile } = props;
@@ -13,3 +12,7 @@ export default function Header(props) {
     return <HeaderDesktop />;
   }
 }
+
+Header.propTypes = {
+  isMobile: PropTypes.bool,
+};
