@@ -14,25 +14,19 @@ export default function HeroMobile() {
       <Container maxW="container.xl">
         <Flex alignItems="center" justifyContent="center" minHeight="80vh">
           <Flex flexDirection="column" gap={3}>
+            <ReactTypingEffect
+              text={["FRONT-END WEB DEVELOPER", "LARAVEL DEVELOPER", "SQL"]}
+              speed={100}
+              typingDelay={250}
+              eraseDelay={200}
+              eraseSpeed={100}
+              className="typingText"
+            />
             <Text
               textAlign="center"
               color="whitesmoke"
               fontWeight="bold"
-              fontSize="12px"
-            >
-              <ReactTypingEffect
-                text={["FRONT-END WEB DEVELOPER", "LARAVEL DEVELOPER", "SQL"]}
-                speed={100}
-                typingDelay={250}
-                eraseDelay={200}
-                eraseSpeed={100}
-              />
-            </Text>
-            <Text
-              textAlign="center"
-              color="whitesmoke"
-              fontWeight="bold"
-              fontSize="18px"
+              fontSize="32px"
             >
               Best phase to keep the journey living is learning 💥 <br />
             </Text>

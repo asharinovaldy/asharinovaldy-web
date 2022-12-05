@@ -14,12 +14,14 @@ import {
 import React from "react";
 import { stack } from "../../constants/constants";
 import Card from "../Card/Card";
+import Divider from "../Divider/Divider";
 
 export default function StackDesktop(props) {
   const { isMobile } = props;
   return (
     <>
-      <Container maxW="container.xl" marginY="24px">
+      <Container maxW="container.xl" marginY="24px" id="stack">
+        <Divider />
         <Box marginY="24px">
           <Text fontSize="48px" fontWeight="bold">
             Stack and Tools

@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "BROPERTI Landing Page",
     description:
-      "Design from BuildWithAngga on Figma, converting from design to HTML format, creating simple landing page purpose to practice HTML, CSS and CSS Framework, Bootstrap.",
+      "Designed by BuildWithAngga on Figma, converting from design to HTML, purpose to practice Front End Stack.",
     image: "/port1.png",
     tags: ["HTML", "CSS", "Bootstrap"],
     source: "https://github.com/asharinovaldy/broperti-bootstrap",
@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "FOODYAR Landing Page",
     description:
-      "Design from BuildWithAngga on Figma, converting from design to HTML format, creating simple landing page purpose to practice HTML and SCSS.",
+      "Designed by BuildWithAngga on Figma, converting from design to HTML, purpose to practice Front End Stack.",
     image: "/port2.png",
     tags: ["HTML", "SCSS"],
     source: "https://github.com/asharinovaldy/foodyar",
@@ -22,9 +22,9 @@ export const projects = [
   {
     title: "NOMADS Landing Page",
     description:
-      "This is a E-Course Project from BuildWithAngga, build from HTML, SCSS, JS, and Bootstrap Framework",
+      "This is a E-Course Project from BuildWithAngga, build from HTML, SCSS, JS, and Bootstrap Framework.",
     image: "/port3.png",
-    tags: ["HTML", "SCSS", "Bootstrap", "Javascript"],
+    tags: ["HTML", "SCSS", "Bootstrap", "JS"],
     source: "https://github.com/asharinovaldy/nomads-front-end",
     visit: "https://asharinovaldy.github.io/nomads-front-end/",
     id: 2,
@@ -32,12 +32,32 @@ export const projects = [
   {
     title: "LORRA TRAVEL Landing Page",
     description:
-      "Design from BuildWithAngga on Figma, converting from design to HTML format, creating simple landing page purpose to practice HTML, CSS and CSS Framework, Bootstrap.",
+      "Designed by BuildWithAngga on Figma, converting from design to HTML, purpose to practice Front End Stack.",
     image: "/port4.png",
     tags: ["HTML", "CSS", "Bootstrap"],
     source: "https://github.com/asharinovaldy/lorra-travel-pixelbwa",
     visit: "https://asharinovaldy.github.io/lorra-travel-pixelbwa/",
     id: 3,
+  },
+  {
+    title: "SHANKARAKU Landing Page",
+    description:
+      "This project requested by friend to create e-commerce landing page.",
+    image: "/port5.png",
+    tags: ["HTML", "CSS", "Bootstrap"],
+    source: "https://github.com/asharinovaldy/shankaraku.id",
+    visit: "https://asharinovaldy.github.io/shankaraku.id/",
+    id: 4,
+  },
+  {
+    title: "ANTRION Landing Page",
+    description:
+      "Designed by Me on Figma, converting from design to HTML, redesign from previous project.",
+    image: "/port6.png",
+    tags: ["HTML", "CSS", "Bootstrap"],
+    source: "https://github.com/asharinovaldy/antrion",
+    visit: "https://asharinovaldy.github.io/antrion/",
+    id: 5,
   },
 ];
 
