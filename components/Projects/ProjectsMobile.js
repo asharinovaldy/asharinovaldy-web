@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { projects } from "../../constants/constants";
 import Divider from "../Divider/Divider";
 import Project from "../Project/Project";
+import { motion } from "framer-motion";
 
 export default function ProjectsMobile() {
   const settings = {
@@ -16,16 +17,19 @@ export default function ProjectsMobile() {
   };
   return (
     <>
-      <Box marginY="42px">
+      <Box
+        marginY="42px"
+        id="projects"
+        as={motion.div}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 5 }}
+      >
         <Container maxW="container.xl">
           <Divider />
           <Box marginY="16px">
             <Text fontSize="24px" fontWeight="bold">
               Projects
-            </Text>
-            <Text fontSize="12px">
-              Ive worked with a range a technologies in the web development
-              world. From Back-End to Design
             </Text>
           </Box>
           <Slider {...settings}>

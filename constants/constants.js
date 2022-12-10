@@ -154,35 +154,15 @@ export const stack = [
   },
 ];
 
-export const tools = [
+export const TimeLineData = [
   {
-    tools: [
-      {
-        id: 0,
-        name: "Front End",
-        tech: [
-          {
-            id: 0,
-            name: "HTML",
-            images: "/HTML.png",
-          },
-          {
-            id: 1,
-            name: "CSS",
-            images: "/CSS.png",
-          },
-          {
-            id: 2,
-            name: "JS",
-            images: "/CS.png",
-          },
-          {
-            id: 3,
-            name: "Bootstrap",
-            images: "/Bootsrap.png",
-          },
-        ],
-      },
-    ],
+    year: 2019,
+    text: "Internship as Web Developer at PFSOFT CV. Paulfen Mandiri",
   },
+  { year: 2020, text: "Graduated from Politeknik Negeri Samarinda" },
+  {
+    year: 2021,
+    text: "Worked as Web Developer at Aksepta, January to March",
+  },
+  { year: 2022, text: "Worked as Software Engineer at Borneos.co" },
 ];

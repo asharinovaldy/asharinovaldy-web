@@ -1,30 +1,36 @@
-import { Box, Container, Flex, IconButton, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Container,
+  Flex,
+  IconButton,
+  Text,
+} from "@chakra-ui/react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { HiOutlineViewGrid } from "react-icons/hi";
 
-export default function HeaderDesktop() {
-  const router = useRouter();
+export default function FooterMobile() {
+  let date = new Date();
   return (
-    <Box
-      position="sticky"
-      top={0}
-      zIndex={99}
-      backgroundColor="#fff"
-      boxShadow="md"
-    >
-      <Box paddingY="16px">
+    <>
+      <Box backgroundImage="radial-gradient(circle, #16213e, #162646, #152a4f, #132f57, #0f3460)">
         <Container maxW="container.xl">
-          <Flex justifyContent="space-between">
-            <Flex alignItems="center" gap={3}>
-              <HiOutlineViewGrid size="40px" />
-              <Text fontSize="24px" fontWeight="bold">
-                asharinovaldy
-              </Text>
-            </Flex>
-            <Flex gap={6}>
+          <Flex
+            gap={6}
+            paddingY="16px"
+            alignItems="center"
+            justifyContent="space-between"
+            flexDirection="column"
+          >
+            <Box>
+              <Link href="mailto:asharinovaldi6319@gmail.com">
+                <Text fontWeight="semibold" color="#f5f5f5">
+                  Email : asharinovaldi6319@gmail.com
+                </Text>
+              </Link>
+            </Box>
+            <Flex gap={3}>
               <Link
                 href="https://www.linkedin.com/in/asharinovaldy21/"
                 target="_blank"
@@ -53,14 +59,15 @@ export default function HeaderDesktop() {
                 />
               </Link>
             </Flex>
-            <Flex alignItems="center" gap={12}>
-              <Link href="#stack">Stack</Link>
-              <Link href="#projects">Projects</Link>
-              <Link href="#about">About</Link>
-            </Flex>
           </Flex>
         </Container>
       </Box>
-    </Box>
+      <Center paddingY="8px">
+        <Text fontSize="12px">
+          Copyright &copy; {date.getFullYear()} | Designed and Build with 🔥 by
+          Ashari Novaldi
+        </Text>
+      </Center>
+    </>
   );
 }
