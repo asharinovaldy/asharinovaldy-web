@@ -37,7 +37,7 @@ export default function HeroMobile() {
               fontWeight="bold"
               fontSize="24px"
             >
-              Hello there! I&lsquo;m Ashari Novaldi 💥 <br />
+              Hello there! I&lsquo;m Ashari Novaldi 👨‍💻 <br />
             </Text>
             <Text textAlign="center" color="whitesmoke" fontSize="12px">
               In this personal portfolio website, i&lsquo;m gonna show you about
