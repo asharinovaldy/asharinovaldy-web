@@ -19,10 +19,11 @@ export default function HeaderDesktop() {
         <Container maxW="container.xl">
           <Flex justifyContent="space-between">
             <Flex alignItems="center" gap={3}>
-              <HiOutlineViewGrid size="40px" />
+              🚀
               <Text fontSize="24px" fontWeight="bold">
                 asharinovaldy
               </Text>
+              🚀
             </Flex>
             <Flex gap={6}>
               <Link

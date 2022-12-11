@@ -28,7 +28,7 @@ export default function HeaderMobile() {
       position="sticky"
       top={0}
       zIndex={99}
-      // paddingY={3}
+      paddingTop={5}
       backgroundColor="#fff"
     >
       <Box paddingY="8px" boxShadow="lg">
@@ -82,10 +82,11 @@ export default function HeaderMobile() {
           <DrawerCloseButton />
           <DrawerHeader>
             <Flex alignItems="center" gap={3}>
-              <HiOutlineViewGrid size="24px" />
+              🚀
               <Text fontSize="24px" fontWeight="bold">
                 asharinovaldy
               </Text>
+              🚀
             </Flex>
           </DrawerHeader>
 

@@ -3,6 +3,7 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import { HiArrowRight } from "react-icons/hi";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function HeroMobile() {
   return (
@@ -11,6 +12,9 @@ export default function HeroMobile() {
       backgroundPosition="center"
       backgroundAttachment="fixed"
       backgroundImage="linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(hero.jpg)"
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
     >
       <Container maxW="container.xl">
         <Flex alignItems="center" justifyContent="center" minHeight="50vh">
