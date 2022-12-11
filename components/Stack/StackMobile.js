@@ -15,7 +15,7 @@ export default function StackMobile(props) {
     slidesToScroll: 1,
   };
   return (
-    <>
+    <Box id="stack">
       <Container maxW="container.xl" marginY="24px">
         <Divider />
         <Box marginY="24px">
@@ -23,8 +23,8 @@ export default function StackMobile(props) {
             Stack and Tools
           </Text>
           <Text fontSize="12px">
-            Ive worked with a range a technologies in the web development world.
-            From Back-End to Design
+            I&lsquo;ve worked with a range a technologies in the web development
+            world. From Back-End to Design
           </Text>
           <Box>
             {stack?.map((item, idx) => (
@@ -49,6 +49,6 @@ export default function StackMobile(props) {
           </Box>
         </Box>
       </Container>
-    </>
+    </Box>
   );
 }

@@ -15,6 +15,7 @@ import React from "react";
 import { stack } from "../../constants/constants";
 import Card from "../Card/Card";
 import Divider from "../Divider/Divider";
+import { motion } from "framer-motion";
 
 export default function StackDesktop(props) {
   const { isMobile } = props;
@@ -27,8 +28,8 @@ export default function StackDesktop(props) {
             Stack and Tools
           </Text>
           <Text fontSize="18px">
-            Ive worked with a range a technologies in the web development world.
-            From Back-End to Design
+            I&lsquo;ve worked with a range a technologies in the web development
+            world. From Back-End to Design
           </Text>
           <Box marginY="48px">
             <Tabs variant="soft-rounded" colorScheme="pink" isFitted>
@@ -41,7 +42,13 @@ export default function StackDesktop(props) {
                 {stack?.map((item, idx) => (
                   <Grid templateColumns="repeat(5, 1fr)" gap={6} key={idx}>
                     {item?.technologies?.map((tech, idx) => (
-                      <TabPanel key={idx}>
+                      <TabPanel
+                        key={idx}
+                        as={motion.div}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 5 }}
+                      >
                         <GridItem>
                           <Card
                             names={tech?.name}
