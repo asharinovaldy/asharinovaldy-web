@@ -28,8 +28,8 @@ export default function StackDesktop(props) {
             Stack and Tools
           </Text>
           <Text fontSize="18px">
-            I&lsquo;ve worked with a range a technologies in the web development
-            world. From Back-End to Design
+            I&lsquo;ve exploring with several stacks in the web development
+            world.
           </Text>
           <Box marginY="48px">
             <Tabs variant="soft-rounded" colorScheme="pink" isFitted>
