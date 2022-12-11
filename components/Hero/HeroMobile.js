@@ -20,7 +20,11 @@ export default function HeroMobile() {
         <Flex alignItems="center" justifyContent="center" minHeight="50vh">
           <Flex flexDirection="column" gap={6}>
             <ReactTypingEffect
-              text={["FRONT-END WEB DEVELOPER", "LARAVEL DEVELOPER", "SQL"]}
+              text={[
+                "FRONT-END DEVELOPER",
+                "LARAVEL DEVELOPER",
+                "SQL DEVELOPER",
+              ]}
               speed={100}
               typingDelay={250}
               eraseDelay={200}
